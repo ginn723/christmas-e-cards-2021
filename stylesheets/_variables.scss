@@ -1,0 +1,19 @@
+$text-color: #173658;
+$font-s: $font-m - 4px;
+$font-m: 18px;
+$font-l: $font-m * 1.5; 
+$font-family-base: 'Microsoft JhengHei', sans-serif;
+
+body {
+  font-family: $font-family-base;
+  color: $text-color;
+  font-size: $font-m;
+}
+
+h1 {
+  font-size: $font-l;
+}
+
+figcaption{
+  font-size: $font-s;
+}

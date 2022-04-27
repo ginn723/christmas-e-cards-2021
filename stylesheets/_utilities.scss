@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+}
+
+h1{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.swiper {
+  padding: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin pad {
+  @media(max-width:768px) {
+    @content
+  }
+}
+
+@mixin mobile {
+  @media(max-width:568px) {
+    @content
+  }
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 40%;
+  @include pad {
+    width: 60%;
+  }
+  @include mobile {
+    width: 80%;
+  } 
+}
